@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="esp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="cuerpo">
+    <header>
+        <img src="./Imagenes/Logo.png" class="logo">
+    </header>
+
+    <main class="principal">
+        <div class="divisorPrincipal">
+            <section class="entrada">
+                <textarea type="text" class="input-text" cols="20" rows="20" placeholder="Ingrese el texto aquí" ></textarea>
+                <div class="alertadiv">
+                    <img src="./Imagenes/signoalerta.png" class="signoAlertaDibujo">
+                    <p class="alerta">Solo letras minúsculas sin acentos.</p>
+                </div>
+                <div class="botones">
+                    <button type="button" onclick="btnencriptar()" class="botonEncriptar">Encriptar</button>
+
+                    <button type="button" onclick="btndesencriptar()" class="botonDesEncriptar">Desencriptar</button>
+                </div>
+            </section>
+
+            <section class="salida">
+                <textarea type="text"  cols="30" rows="20" class="input-text-area"></textarea>
+                <button type="button" onclick="btCopiar()" class="botonCopiar">Copiar</button>
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <p class="copyright">&copy Copyright Charly Maths - 2022</p>
+    </footer>
+
+
+</body>
+
+<script src="scripts.js"></script>
+
+</html>
